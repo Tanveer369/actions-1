@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: Disable workflow commands
         run: |
+          echo "::debug::Set the Octocat variable"
           echo '::warning:: This is a warning message, to demonstrate that commands are being processed.'
           stopMarker=$(uuidgen)
           echo "::stop-commands::$stopMarker"
