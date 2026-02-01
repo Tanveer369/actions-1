@@ -5,7 +5,7 @@ on:
 
 jobs:
   workflow-command-job:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Disable workflow commands
         run: |
